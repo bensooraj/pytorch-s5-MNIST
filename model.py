@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from   torchsummary import summary
 
 device = torch.device("mps:0")
 
@@ -26,6 +27,9 @@ class Net(nn.Module):
         x = F.relu(self.fc1(x))
         x = self.fc2(x)
         return F.log_softmax(x, dim=1)
+    
+    def summary(self, input_size):
+        summary(self.to(device), input_size)
 
 class Net2(nn.Module):
     # This defines the structure of the NN.
@@ -49,3 +53,6 @@ class Net2(nn.Module):
         x = F.relu(self.fc1(x))
         x = self.fc2(x)
         return F.log_softmax(x, dim=1)
+    
+    def summary(self, input_size):
+        summary(self.to(device), input_size)
