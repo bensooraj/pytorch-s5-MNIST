@@ -19,7 +19,7 @@ This project is organised as shown below,
 1 directory, 5 files
 ```
 
-## How to run 
+## 3. How to run 
 1. Make sure `JupyterLab` is installed,
 ```sh
 $ jupyter --version
@@ -61,10 +61,10 @@ This should automatically launch your default browser and open `http://localhost
 
 All set!
 
-## Challenges
+## 4. Challenges
 1. The MPS backend doesn't work properly `shuffle=True` for [`torch.utils.data.DataLoader`](https://pytorch.org/docs/stable/data.html#module-torch.utils.data).
 
-## Resources
+## 5. Resources
 1. [Accelerated PyTorch training on Mac](https://developer.apple.com/metal/pytorch/)
 2. [PyTorch: MPS BACKEND](https://pytorch.org/docs/master/notes/mps.html)
 3. [A Simple Conv2D Dimensions Calculator & Logger](https://charisoudis.com/blog/a-simple-conv2d-dimensions-calculator-logger)
