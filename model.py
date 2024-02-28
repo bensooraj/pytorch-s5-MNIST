@@ -31,6 +31,7 @@ class Net(nn.Module):
     def summary(self, input_size):
         summary(self.to(device), input_size)
 
+# Model with bias=False
 class Net2(nn.Module):
     # This defines the structure of the NN.
     def __init__(self):
